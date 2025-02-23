@@ -1,0 +1,206 @@
+.v-d-section {
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 525px);
+    gap: 6rem;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .v-d-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    height: 300px;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image-title {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    color: white; 
+    font-weight: bold;
+  }
+  
+  .title-text {
+    margin: 0;
+    width: 180px;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  
+
+  .progress-section {
+    padding: 10px 25px;
+  }
+  
+  .progress-bar-container {
+    position: relative;
+    margin: 1rem 0;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: #FFE5D6;
+    border-radius: 4px;
+    position: relative;
+    margin-top: 25px;
+  }
+  
+  .progress-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #FF8A3D, #FF8A3D);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+  
+  .progress-amount {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FF8A3D;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+  }
+  
+  .progress-caret {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FF8A3D;
+    font-size: 16px;
+  }
+  
+  .fund-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align text properly */
+    border-bottom: 1px solid #ccc; /* Light horizontal line */
+    padding-bottom: 0.5rem; /* Spacing above the line */
+}
+
+.fund-info1 {
+    color: #666;  
+    font-size: 1rem; 
+    font-weight: 300; }
+
+.fund-info2 {
+    color: #000000; /* Black */
+    font-size: 1rem; /* Ensure same font size */
+    font-weight: bold; /* Bold */
+}
+
+  
+  .card-description {
+    padding: 0 1rem;
+    color: #333;
+    padding: 10px 25px;
+
+    line-height: 1.5;
+    flex-grow: 1;
+  }
+
+  .hr{
+    margin: 0 25px;
+    border-bottom: 1px solid #ccc;
+
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem;
+    margin-top: auto;
+}
+
+.action-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px; /* Padding to create the white border */
+    border-radius: 12px; /* Outer border rounded */
+    border: 3px solid #FF8A3D; /* Outer orange border */
+    background: white; /* White background creates the gap effect */
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.inner-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px; /* Inner rounded corners */
+    background: #FF8A3D; /* Orange background */
+    color: white; /* White text */
+    font-weight: bold;
+    font-size: 1.2rem; /* Adjusted font size */
+    width: 100%;
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-icon {
+    font-size: 1.2rem; /* Matching icon size */
+    color: inherit; /* Same color as text */
+}
+
+
+  
+  @media (max-width: 1200px) {
+    .card-grid {
+      grid-template-columns: 400px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .v-d-card {
+      height: 550px;
+    }
+    
+    .image {
+      height: 200px;
+    }
+  }
