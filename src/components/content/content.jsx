@@ -8,7 +8,7 @@ import Logo3 from '../../assets/2nd.png';
 import Logo4 from '../../assets/3rd.png';
 import Logo5 from '../../assets/4th.png';
 import Card from '../C&P card/card';
-
+import Testimonial from '../Testimonial/TestimonialCard';
 
 const Content = () => {
   return (
@@ -73,7 +73,11 @@ every child has the chance to thrive and make a positive impact on society.
 
 
 
+<div class="container">
+    <h2 class="gradient-text"> Hear from our Contributers</h2>
+</div>
 
+<Testimonial/>
 
 
     </>
