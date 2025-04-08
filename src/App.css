@@ -5,6 +5,30 @@
   padding: 0;
 }
 
+/* Custom Scrollbar Styles */
+body::-webkit-scrollbar,
+main::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track,
+main::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+body::-webkit-scrollbar-thumb,
+main::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 6px;
+  border: 2px solid #f0f0f0;
+}
+
+body::-webkit-scrollbar-thumb:hover,
+main::-webkit-scrollbar-thumb:hover {
+  background-color: #ff7a00;
+}
+
+
 body, html {
   margin: 0;
   padding: 0;
