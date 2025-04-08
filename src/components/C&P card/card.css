@@ -1,6 +1,12 @@
 /* Card.css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
 
 .cards-section {
@@ -161,7 +167,7 @@
 
     .card {
         height: 400px;
-        width: 85%;
+        width: 90%;
     }
 
     .campaign-image {
@@ -176,7 +182,6 @@
 
     .card {
         height: 340px;
-        width: 60%;
     }
 
     .campaign-image {

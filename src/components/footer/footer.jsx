@@ -56,9 +56,13 @@ const Footer = () => {
 
       <div className=" footer-bottom">
         <div className="footer-bottom-content">
-          <Link to="/terms">Terms & Conditions</Link>
+        <div>Copyrights © 2024 All Rights reserved Jan Samar Foundation</div>
+        <div className="footer-links">
+        <Link to="/terms">Terms & Conditions</Link>
           <Link to="/privacy">Privacy Policy</Link>
           <Link to="/refund">Return & Refund Policy</Link>
+          </div>
+
         </div>
       </div>
     </footer>

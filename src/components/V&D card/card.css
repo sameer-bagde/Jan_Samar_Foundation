@@ -195,29 +195,29 @@
   
   @media (max-width: 768px) {
     .card-grid {
-      grid-template-columns: 1fr; /* Single column layout */
-      gap: 3rem; /* Reduce the gap */
+      grid-template-columns: 1fr;
+      gap: 2rem;
     }
   
     .v-d-card {
-      height: 500px; /* Reduce height */
-      padding: 1rem; /* Reduce padding */
+      height: 400px; 
+      padding: 1rem; 
     }
   
     .image-wrapper {
-      height: 250px; /* Reduce image height */
+      height: 250px; 
     }
   
     .progress-section {
-      padding: 5px 15px; /* Reduce padding */
+      padding: 5px 15px;
     }
   
     .progress-amount {
-      font-size: 0.75rem; /* Reduce font size */
+      font-size: 0.75rem; 
     }
   
     .card-description {
-      font-size: 0.9rem; /* Reduce text size */
+      font-size: 0.9rem; 
     }
   
     .button-container {
@@ -227,11 +227,10 @@
   
     .inner-btn {
       padding: 0.5rem 1rem;
-      font-size: 1rem; /* Reduce button font size */
-    }
+      font-size: 1rem; }
   
     .btn-icon {
-      font-size: 1rem; /* Reduce icon size */
+      font-size: 1rem; 
     }
   }
   
@@ -241,21 +240,21 @@
     }
   
     .v-d-card {
-      height: 450px; /* Further reduce height */
-      border-radius: 12px; /* Slightly smaller border-radius */
+      height: 350px; 
+      border-radius: 12px; 
     }
   
     .image-wrapper {
-      height: 180px; /* Reduce image height */
+      height: 180px;
     }
   
     .progress-bar {
-      height: 6px; /* Thinner progress bar */
+      height: 6px; 
     }
   
     .progress-amount {
       font-size: 0.7rem;
-      top: -30px; /* Adjust position */
+      top: -30px;
     }
   
     .button-container {
