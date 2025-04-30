@@ -31,9 +31,25 @@ const Header = () => {
       <Link to="/programs" className="nav-item" onClick={() => setIsMenuOpen(false)}>Programs</Link>
       <Link to="/get-involved" className="nav-item" onClick={() => setIsMenuOpen(false)}>Get Involved</Link>
       <Link to="/contact" className="nav-item" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
-      <Link to="/donate" className="donate-button" onClick={() => setIsMenuOpen(false)}>Donate</Link>
+      <Link to="/donate" className="donate-button" onClick={() => setIsMenuOpen(false)}>Donate Now</Link>
     </nav>
   </div>
+
+  <div className="header-content">
+          <h1 className="header-title">
+            <span className="header-title-small">Small</span>
+            <span> </span>
+            <span className="header-title-script">Efforts</span><br />
+            <span className="header-title-make">Make Big Changes</span>
+          </h1>
+          <p className="header-subtitle">we are ready for provide better service to make the world happy</p>
+          <div className="header-buttons">
+            <button className="header-volunteer-button">Become a Volunteer</button>
+            <button  className="header-donate-button">Donate Now</button>
+          </div>
+        </div>
+    
+
 </header>
       
     </div>
