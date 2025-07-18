@@ -1,11 +1,14 @@
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import { FaSeedling, FaGraduationCap, FaNotesMedical } from 'react-icons/fa';
+import { Mail } from 'lucide-react';
 import './Content.css';
 import img1 from '../../assets/PHOTO-2024-12-03-19-08-49 6-images-0.jpg';
 import img2 from '../../assets/img2.jpg';
 import img3 from '../../assets/img3.jpg';
 import img4 from '../../assets/PHOTO-2024-12-03-19-08-49 3_page-0003.jpg';
-
+import img5 from '../../assets/muskan.jpg'
+import img6 from '../../assets/Rajesh.jpg'
+import img7 from '../../assets/Nisha.jpg'
 
 const Content = () => {
   return (
@@ -127,7 +130,7 @@ well-being.         </p>
         
         <div className="stories-content">
           <div className="stories-image-grid">
-            {/* Use loading="lazy" for images that are below the fold */}
+            {/* Use loading="lazy" for mages that are below the fold */}
             <div className="stories-image">
               <img 
                 className="container1" 
@@ -175,6 +178,286 @@ well-being.         </p>
         </div>
       </div>
     </section>
+
+<section className="ourteam-section">
+    <div className="ourteam-container">
+        <div className="ourteam-heading">
+            <h1 className="first">Our Team</h1>
+            <div className="subtitle">
+                <span className="highlight">Meet</span> the Passionate Mind Behind
+                <br />
+                <span>uplift</span>
+            </div>
+        </div>
+
+        <div className="team-grid">
+            <div className="team-card">
+                <div className="card-image">
+                    <img
+                        className="container2"
+                        src={img5}
+                        alt="Children smiling with volunteer"
+                        loading="lazy"
+                    />
+                </div>
+                <div className="email-btn">
+                    <Mail size={20} strokeWidth={2} />
+                </div>
+                <div className="card-content">
+                    <p className="member-role">President Of Jan Samar Foundation</p>
+                    <h3 className="member-name">Muskaan Goel</h3>
+                    <div className="card-divider"></div>
+                </div>
+            </div>
+
+            <div className="team-card">
+                <div className="card-image">
+                    <img
+                        className="container2"
+                        src={img6}
+                        alt="Children smiling with volunteer"
+                        loading="lazy"
+                    />
+                </div>
+                <div className="email-btn">
+                    <Mail size={20} strokeWidth={2} />
+                </div>
+                <div className="card-content">
+                    <p className="member-role">Co-Founder Of Jan Samar Foundation</p>
+                    <h3 className="member-name">Rajesh Goel</h3>
+                    <div className="card-divider"></div>
+                </div>
+            </div>
+
+            <div className="team-card">
+                <div className="card-image">
+                    <img
+                        className="container2"
+                        src={img7}
+                        alt="Children smiling with volunteer"
+                        loading="lazy"
+                    />
+                </div>
+                <div className="email-btn">
+                    <Mail size={20} strokeWidth={2} />
+                </div>
+                <div className="card-content">
+                    <p className="member-role">Treasurer Of Jan Samar Foundation</p>
+                    <h3 className="member-name">Nisha Goel</h3>
+                    <div className="card-divider"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section className="Contributors-section">
+      <div className="Contributors-container">
+        <div className="Contributors-heading">
+          <h1 className="first">Hear From Our Contributors</h1>
+        </div>
+        
+        <div className="Contributors-grid">
+          <div className="contributor-card">
+            <div className="contributor-card-content">
+              <p className="testimonial">I had the opportunity to meet and support all the individuals involved. The time I spent with those kids filled me with joy beyond measure.</p>
+              <div className="contributor-info">
+                <div className="contributor-avatar">
+                  <img src={img4} alt="Mukesh" />
+                </div>
+                <div className="contributor-details">
+                  <h3 className="contributor-name">
+                    Mukesh <span className="location">,Mumbai</span>
+                  </h3>
+                  <p className="contributor-state">Maharashtra</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="contributor-card">
+            <div className="contributor-card-content">
+              <p className="testimonial">I had the opportunity to meet and support all the individuals involved. The time I spent with those kids filled me with joy beyond measure.</p>
+              <div className="contributor-info">
+                <div className="contributor-avatar">
+                  <img src={img4} alt="Sandeep" />
+                </div>
+                <div className="contributor-details">
+                  <h3 className="contributor-name">
+                    Sandeep <span className="location">,Kochi</span>
+                  </h3>
+                  <p className="contributor-state">Kerala</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="contributor-card">
+            <div className="contributor-card-content">
+              <p className="testimonial">I had the opportunity to meet and support all the individuals involved. The time I spent with those kids filled me with joy beyond measure.</p>
+              <div className="contributor-info">
+                <div className="contributor-avatar">
+                  <img src={img4} alt="Ranjith Reddy" />
+                </div>
+                <div className="contributor-details">
+                  <h3 className="contributor-name">
+                    Ranjith Reddy <span className="location">,Hyderabad</span>
+                  </h3>
+                  <p className="contributor-state">Telangana</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="contributor-card">
+            <div className="contributor-card-content">
+              <p className="testimonial">I had the opportunity to meet and support all the individuals involved. The time I spent with those kids filled me with joy beyond measure.</p>
+              <div className="contributor-info">
+                <div className="contributor-avatar">
+                  <img src={img4} alt="Pallavi" />
+                </div>
+                <div className="contributor-details">
+                  <h3 className="contributor-name">
+                    Pallavi <span className="location">,Pallakad</span>
+                  </h3>
+                  <p className="contributor-state">Kerala</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="contributor-card">
+            <div className="contributor-card-content">
+              <p className="testimonial">I had the opportunity to meet and support all the individuals involved. The time I spent with those kids filled me with joy beyond measure.</p>
+              <div className="contributor-info">
+                <div className="contributor-avatar">
+                  <img src={img4} alt="Harsha" />
+                </div>
+                <div className="contributor-details">
+                  <h3 className="contributor-name">
+                    Harsha <span className="location">,Chennai</span>
+                  </h3>
+                  <p className="contributor-state">Tamilnadu</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="contributor-card">
+            <div className="contributor-card-content">
+              <p className="testimonial">I had the opportunity to meet and support all the individuals involved. The time I spent with those kids filled me with joy beyond measure.</p>
+              <div className="contributor-info">
+                <div className="contributor-avatar">
+                  <img src={img4} alt="Varun" />
+                </div>
+                <div className="contributor-details">
+                  <h3 className="contributor-name">
+                    Varun <span className="location">,Chennai</span>
+                  </h3>
+                  <p className="contributor-state">Tamilnadu</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="pagination-dots">
+          <span className="dot"></span>
+          <span className="dot"></span>
+          <span className="dot active"></span>
+          <span className="dot"></span>
+          <span className="dot"></span>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="upcoming-events-section">
+        <div class="upcoming-events-container">
+                <div class="upcoming-events-heading">
+                    <h1 class="first">Upcoming Events</h1>
+                </div>
+                <button class="view-all-btn">View All</button>
+            
+            <div class="upcoming-events-grid">
+                <div class="upcoming-events-card">
+                    <div class="upcoming-events-image">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2032&q=80" alt="Education Campaign" loading="lazy" />
+                        <div class="event-overlay">
+                            <h3 class="event-title">Education Campaign</h3>
+                            <button class="join-button">Join With Us</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="upcoming-events-card">
+                    <div class="upcoming-events-image">
+                        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Plantation Drive" loading="lazy" />
+                        <div class="event-overlay">
+                            <h3 class="event-title">Plantation Drive</h3>
+                            <button class="join-button">Join With Us</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="upcoming-events-card">
+                    <div class="upcoming-events-image">
+                        <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Food Distributions" loading="lazy" />
+                        <div class="event-overlay">
+                            <h3 class="event-title">Food Distributions</h3>
+                            <button class="join-button">Join With Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="donate-now-section">
+        <div class="donate-now-container">
+            <header class="donate-now-section-header">
+                <h1>Let us unite to elevate our community<br />and the world around us</h1>
+                <p>Sometimes it feels like our efforts are just a small drop in the vast ocean but the ocean would be a little less without that drop. Every contribution matters, no matter how small, and together, we shape the present into a future we can all take pride in.</p>
+                <button class="donate-now-btn">Donate Now</button>
+            </header>
+        </div>
+        <div className="donate-grid-container">
+          <div className="donate-grid-item" id="be-reason">
+            <div>Be The Reason<br />a Child<br />Smile</div>
+          </div>
+          
+          <div className="donate-grid-item" id="volunteer-count">
+            <div>Join our community</div>
+          </div>
+          
+          <div className="donate-grid-item" id="volunteers-working">
+            <div className="large-number">200+</div>
+            <div className="medium-text">Volunteers Working<br />With Us</div>
+          </div>
+          
+          <div className="donate-grid-item" id="join-foundation">
+            <div>Join With Us<br />In the Jan Samar<br />Foundation</div>
+            <button className="join-us-btn">Join Us</button>
+          </div>
+          
+          <div className="donate-grid-item" id="inspire-change">
+            <div>Inspire Change,<br />Inspire Education</div>
+          </div>
+          
+          <div className="donate-grid-item" id="plant-everywhere">
+            <div>Plant<br />Everywhere</div>
+          </div>
+          
+          <div className="donate-grid-item" id="donate-header">
+            <div>Support Our<br />Mission</div>
+          </div>
+        </div>
+    </section>
+
+
   </>
 
   );
