@@ -1,7 +1,7 @@
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 import { FaSeedling, FaGraduationCap, FaNotesMedical } from 'react-icons/fa';
 import { Mail } from 'lucide-react';
-import './Content.css';
+import './Home.css';
 import img1 from '../../assets/PHOTO-2024-12-03-19-08-49 6-images-0.jpg';
 import img2 from '../../assets/img2.jpg';
 import img3 from '../../assets/img3.jpg';
@@ -10,7 +10,7 @@ import img5 from '../../assets/muskan.jpg'
 import img6 from '../../assets/Rajesh.jpg'
 import img7 from '../../assets/Nisha.jpg'
 
-const Content = () => {
+const Home = () => {
   return (
 
   <>
@@ -463,4 +463,4 @@ well-being.         </p>
   );
 };
 
-export default Content;
+export default Home;

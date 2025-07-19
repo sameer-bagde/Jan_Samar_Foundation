@@ -29,7 +29,15 @@
   position: relative;
 }
 
-
+/* New class for header without background image */
+.header-no-bg {
+  background-image: none !important;
+  background-color: #f5f5f5;
+  aspect-ratio: unset;
+  height: auto;
+  min-height: auto;
+  
+}
 
 .navbar {
   display: flex;
@@ -43,6 +51,13 @@
 }
 
 
+/* Update navbar styling for pages without background */
+.header-no-bg .navbar {
+  background-color: #f8d1ba;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
 .logo-container {
   display: flex;
   align-items: center;
@@ -54,6 +69,12 @@
   transition: height 0.3s ease;
 }
 
+.logo-no-bg{
+    height: 120px;
+    width: auto;
+
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -63,6 +84,16 @@
 
 .nav-item {
   color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item-no-bg{
+    color: black;
   text-decoration: none;
   font-family: sans-serif;
   font-size: 20px;
@@ -143,8 +174,6 @@
   .donate-button, .nav-item {
     font-size: 18px;
   }
-
-
 }
 
 @keyframes fadeIn {
@@ -192,15 +221,15 @@
   font-family: 'Poppins', sans-serif;
 }
 
-
 .header-buttons {
   display: flex;
-  justify-content:  center;
+  justify-content: center;
   gap: 30px; 
 }
 
-.header-subtitle{padding-bottom: 2rem ; }
-
+.header-subtitle {
+  padding-bottom: 2rem;
+}
 
 .header-volunteer-button {
   font-family: 'Poppins', sans-serif;
@@ -223,7 +252,7 @@
   font-weight: 400;
   color: #FF8C42;
   border: 2px solid #FF8C42;
-  border-radius: 12px ;
+  border-radius: 12px;
   padding: 8px 22px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -233,6 +262,7 @@
 .header-volunteer-button:hover {
   transform: scale(1.05);
 }
+
 .header-donate-button:hover {
   transform: scale(1.05);
 }

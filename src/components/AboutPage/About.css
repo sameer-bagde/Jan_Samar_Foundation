@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Lobster&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 575px;
+    background-color: #f8d1ba;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.content {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 40px;
+    line-height: 1.1;
+}
+
+.highlight1 {
+    background-color: #FFA35C;
+    color: #000000;
+    padding: 8px 20px;
+    border-radius: 25px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: #000000;
+  line-height: 1.6;
+  margin-bottom: 50px;
+  font-weight: 400;
+  
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background-color: #FFA35C;
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 180px;
+}
+
+.btn:hover {
+    background-color: #ff9939;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+    
+    .highlight1 {
+        display: block;
+        margin: 10px auto 0;
+        width: fit-content;
+    }
+    
+    .description {
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+    }
+    
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    
+    .content {
+        padding: 30px 15px;
+    }
+}
+
+
+/* mop */
+
+.jan-samar-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+  min-height: 600px;
+}
+
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin-bottom: 60px;
+  line-height: 1.2;
+}
+
+.vision-mission-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 550px;
+}
+
+.vision-card,
+.mission-card {
+  background: #ffeee6;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.vision-card:hover,
+.mission-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #FF8C42, #FFA35C);
+  border-radius: 50%;
+  margin: 0 auto 25px;
+  box-shadow: 0 4px 15px rgba(255, 140, 66, 0.3);
+}
+
+.card-icon {
+  color: white;
+}
+
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.card-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000000;
+  line-height: 2;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .jan-samar-section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+  
+  .vision-mission-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .vision-card,
+  .mission-card {
+    padding: 30px 20px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+  }
+  
+  .card-description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .section-title {
+    font-size: 1.7rem;
+  }
+  
+  .icon-container {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .card-icon {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .vision-card,
+  .mission-card {
+    padding: 25px 15px;
+  }
+}
+
+
+/* our team */
+
+/* Pilliar Of Jan Samar Foundation */
+.pilliar-section {
+    background-color: white;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pilliar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pilliar-heading {
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.pilliar-heading h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #2c2c2c;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+    line-height: 1.2;
+}
+
+.foundation-text {
+    color: #ff7b29;
+    font-weight: 500;
+    font-family: 'Courgette', cursive;
+}
+
+
+
+.pilliar-team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    margin-top: 40px;
+}
+
+.pilliar-member {
+    position: relative;
+    max-width: 350px;
+    width: 100%;
+}
+
+.pilliar-profile-image {
+    position: relative;
+    z-index: 2;
+    width: 280px;
+    height: 280px;
+    margin: 0 auto 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.pilliar-profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.pilliar-member:hover .pilliar-profile-image {
+    transform: translateY(-5px);
+}
+
+.pilliar-member:hover .pilliar-profile-image img {
+    transform: scale(1.05);
+}
+
+.pilliar-member-card {
+    background: rgba(255, 208, 177, 0.8);
+    border-radius: 15px;
+    margin-top: -90px;
+    padding-top: 110px;
+    padding-bottom: 45px;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
+    height: 300px;
+    z-index: 1;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.pilliar-member:hover .pilliar-member-card {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.pilliar-member-name {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.pilliar-member-role {
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 25px;
+    text-transform: none;
+    letter-spacing: 0.3px;
+}
+
+.pilliar-dropdown-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background: #ff7b29;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 123, 41, 0.3);
+    border: 3px solid rgba(255, 208, 177, 0.8);
+}
+
+.pilliar-dropdown-btn svg {
+    width: 20px;
+    height: 20px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.pilliar-dropdown-btn:hover {
+    background: #e6691f;
+    transform: translateX(-50%) scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 123, 41, 0.4);
+}
+
+.pilliar-dropdown-btn:hover svg {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+    .pilliar-heading h1 {
+        font-size: 2.2rem;
+    }
+    
+    .pilliar-team-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .pilliar-profile-image {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .pilliar-member-card {
+        margin-top: -80px;
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pilliar-heading h1 {
+        font-size: 1.8rem;
+    }
+    
+    .pilliar-section {
+        padding: 40px 15px;
+    }
+    
+    .pilliar-profile-image {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .pilliar-member-card {
+        margin-top: -70px;
+        padding-top: 90px;
+    }
+}

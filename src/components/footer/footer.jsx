@@ -4,7 +4,7 @@ import './footer.css';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="body max-width">
       <div className="foundation-footer">
         <div className="footer-container">
           <div className="content-section">
