@@ -2,14 +2,46 @@ import React from 'react';
 import img5 from '../../assets/muskan.jpg'
 import img6 from '../../assets/Rajesh.jpg'
 import img7 from '../../assets/Nisha.jpg'
+import img8 from '../../assets/plant image.jpg'
 import { Mail,ChevronDown } from 'lucide-react';
-
 
 import { Eye, Rocket } from 'lucide-react';
 
 import './About.css';
 
 const About = () => {
+    const statesData = [
+    {
+      name: 'Maharashtra',
+      percentage: '30%',
+      className: 'ovng-jarnatak-maharashtra'
+    },
+    {
+      name: 'Madhya Pradesh',
+      percentage: '25%',
+      className: 'ovng-jarnatak-madhya-pradesh'
+    },
+    {
+      name: 'Tamil Nadu',
+      percentage: '25%',
+      className: 'ovng-jarnatak-tamil-nadu'
+    },
+    {
+      name: 'Telangana',
+      percentage: '10%',
+      className: 'ovng-jarnatak-telangana'
+    },
+    {
+      name: 'Kerala',
+      percentage: '5%',
+      className: 'ovng-jarnatak-kerala'
+    },
+    {
+      name: 'Karnataka',
+      percentage: '5%',
+      className: 'ovng-jarnatak-karnataka'
+    }
+  ];
   return (
     <>
       <div className="container">
@@ -120,6 +152,62 @@ const About = () => {
         </div>
     </div>
 </section>
+
+
+<section className="our-stories-section">
+  <div className="our-stories-section-wrapper">
+    <div className="our-stories-section-container">
+      <h2 className="our-stories-section-title">
+        Our <span className="our-stories-foundation-text">Stories</span>
+      </h2>
+      
+      <p className="our-stories-section-text">
+The Jan Samar Foundation was established to confront urgent societal and environmental
+challenges head-on. The founders, moved by the struggles of underprivileged children
+lacking access to basic education and proper nutrition, as well as the alarming
+degradation of our natural world, recognized the urgent need for a platform that
+empowers individuals, uplifts communities, and safeguards our planet. 
+      </p>
+      
+      <img 
+        src={img8} 
+        alt="Hands protecting a growing plant in soil" 
+        className="our-stories-section-image"
+      />
+    </div>
+    
+    <div className="our-stories-section-button-container">
+      <a href="#" className="our-stories-section-button">
+        Join With Us
+      </a>
+    </div>
+  </div>
+</section>
+
+    <section className="ovng-jarnatak-container">
+      <div className="ovng-jarnatak-wrapper">
+        <section className="ovng-jarnatak-header">
+          <h1 className="ovng-jarnatak-title">
+            Our <span className="ovng-jarnatak-growing">growing</span>
+          </h1>
+          <h1 className="ovng-jarnatak-title">Volunteer Network</h1>
+        </section>
+
+        <section className="ovng-jarnatak-network-container">
+          {statesData.map((state) => (
+            <div
+              key={state.name}
+              className={`ovng-jarnatak-state-circle ${state.className}`}
+            >
+              <div className="ovng-jarnatak-state-name">{state.name}</div>
+              <div className="ovng-jarnatak-percentage">{state.percentage}</div>
+            </div>
+          ))}
+        </section>
+      </div>
+    </section>
+
+
     </>
   );
 };

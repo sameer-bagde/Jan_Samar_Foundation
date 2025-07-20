@@ -137,7 +137,7 @@
   font-size: 3.5rem;
   font-weight: 600;
   text-align: center;
-  color: #333;
+  color: #000000;
   margin-bottom: 60px;
   line-height: 1.2;
 }
@@ -157,7 +157,6 @@
   border-radius: 20px;
   padding: 40px 30px;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -166,7 +165,6 @@
 .vision-card:hover,
 .mission-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
 .icon-container {
@@ -281,7 +279,7 @@
 
 .pilliar-heading h1 {
     font-family: 'Poppins', sans-serif;
-    color: #2c2c2c;
+    color: #000000;
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 1rem;
@@ -450,4 +448,417 @@
         margin-top: -70px;
         padding-top: 90px;
     }
+}
+
+
+/* our stories */
+
+.our-stories-section {
+  margin: 0 auto;
+  position: relative;
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-stories-section-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-stories-section-container {
+  background-color: #FF8C42;
+  width: 100%;
+  height: 500px;
+  max-width: 1000px;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  color: rgb(222, 222, 222);
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.our-stories-section-title {
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.our-stories-section-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+font-weight: 400;
+  margin-bottom: 30px;
+  color: #000000;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+      font-family: 'Poppins', sans-serif;
+
+}
+
+.our-stories-foundation-text {
+    color: #ffffff;
+    font-weight: 500;
+    font-family: 'Courgette', cursive;
+}
+
+
+.our-stories-section-image {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  position: absolute;
+  bottom: -220px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.our-stories-section-button-container {
+  text-align: center;
+  margin-top: 280px;
+  width: 100%;
+}
+
+.our-stories-section-button {
+  display: inline-block;
+  background-color: #fb8d39;
+  color: rgb(0, 0, 0);
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+
+}
+
+.our-stories-section-button:hover {
+  background-color: #FF8C42;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+  .our-stories-section {
+    padding: 40px 10px;
+    min-height: 500px;
+  }
+
+  .our-stories-section-wrapper {
+    padding: 0;
+  }
+
+  .our-stories-section-container {
+    padding: 30px 20px;
+    margin: 0 10px;
+  }
+
+  .our-stories-section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .our-stories-section-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .our-stories-section-image {
+    max-width: 350px;
+    bottom: -225px;
+  }
+
+  .our-stories-section-button-container {
+    margin-top: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .our-stories-section-container {
+    margin: 0 5px;
+    padding: 25px 15px;
+  }
+
+  .our-stories-section-title {
+    font-size: 1.8rem;
+  }
+
+  .our-stories-section-image {
+    max-width: 300px;
+    bottom: -225px;
+  }
+
+  .our-stories-section-button-container {
+    margin-top: 180px;
+  }
+}
+
+
+/* ogvn */
+
+.ovng-jarnatak-container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.ovng-jarnatak-wrapper {
+  width: 100%;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.ovng-jarnatak-header {
+  margin-bottom: 50px;
+}
+
+.ovng-jarnatak-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-family: 'Poppins', sans-serif;
+
+
+}
+
+
+.ovng-jarnatak-growing {
+  color: #e67e22;
+      font-family: 'Courgette', cursive;
+      font-size: 600;
+}
+
+.ovng-jarnatak-network-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.ovng-jarnatak-state-circle {
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.ovng-jarnatak-state-circle:hover {
+  transform: scale(1.05);
+}
+
+.ovng-jarnatak-state-name {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.ovng-jarnatak-percentage {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* Maharashtra - largest circle, center */
+.ovng-jarnatak-maharashtra {
+  width: 250px;
+  height: 250px;
+  background-color: #e67e22;
+  left: 32%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ovng-jarnatak-maharashtra:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Madhya Pradesh - top left */
+.ovng-jarnatak-madhya-pradesh {
+  width: 180px;
+  height: 180px;
+  background-color: #f4c2a1;
+  color: #333;
+  left: 10px;
+  top: 80px;
+}
+
+/* Tamil Nadu - top right */
+.ovng-jarnatak-tamil-nadu {
+  width: 180px;
+  height: 180px;
+  background-color: #e67e22;
+  right: 225px;
+  top: 60px;
+}
+
+/* Telangana - top center */
+.ovng-jarnatak-telangana {
+  width: 150px;
+  height: 150px;
+  background-color: #8b6f47;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+
+.ovng-jarnatak-telangana:hover {
+  transform: translateX(-50%) scale(1.05);
+}
+
+/* Kerala - bottom left */
+.ovng-jarnatak-kerala {
+  width: 130px;
+  height: 130px;
+  background-color: #f4c2a1;
+  color: #333;
+  left: 550px;
+  top: 200px;
+}
+
+/* Karnataka - bottom right */
+.ovng-jarnatak-karnataka {
+  width: 130px;
+  height: 130px;
+  background-color: #f4c2a1;
+  color: #333;
+  right: 60px;
+  bottom: 180px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ovng-jarnatak-network-container {
+    height: 450px;
+  }
+  
+  .ovng-jarnatak-maharashtra {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .ovng-jarnatak-madhya-pradesh {
+    width: 90px;
+    height: 90px;
+    left: 20px;
+    top: 60px;
+  }
+  
+  .ovng-jarnatak-tamil-nadu {
+    width: 110px;
+    height: 110px;
+    right: 20px;
+    top: 80px;
+  }
+  
+  .ovng-jarnatak-telangana {
+    width: 75px;
+    height: 75px;
+    top: 30px;
+  }
+  
+  .ovng-jarnatak-kerala {
+    width: 65px;
+    height: 65px;
+    left: 130px;
+    bottom: 50px;
+  }
+  
+  .ovng-jarnatak-karnataka {
+    width: 55px;
+    height: 55px;
+    right: 50px;
+    bottom: 60px;
+  }
+  
+  .ovng-jarnatak-state-name {
+    font-size: 0.8rem;
+  }
+  
+  .ovng-jarnatak-percentage {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ovng-jarnatak-network-container {
+    height: 400px;
+  }
+  
+  .ovng-jarnatak-maharashtra {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .ovng-jarnatak-madhya-pradesh {
+    width: 80px;
+    height: 80px;
+    left: 15px;
+    top: 50px;
+  }
+  
+  .ovng-jarnatak-tamil-nadu {
+    width: 95px;
+    height: 95px;
+    right: 15px;
+    top: 70px;
+  }
+  
+  .ovng-jarnatak-telangana {
+    width: 65px;
+    height: 65px;
+    top: 25px;
+  }
+  
+  .ovng-jarnatak-kerala {
+    width: 55px;
+    height: 55px;
+    left: 110px;
+    bottom: 45px;
+  }
+  
+  .ovng-jarnatak-karnataka {
+    width: 50px;
+    height: 50px;
+    right: 40px;
+    bottom: 50px;
+  }
+  
+  .ovng-jarnatak-percentage {
+    font-size: 1.2rem;
+  }
+  
+  .ovng-jarnatak-state-name {
+    font-size: 0.7rem;
+  }
 }

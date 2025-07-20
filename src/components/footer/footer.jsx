@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-container">
           <div className="content-section">
             <h1 className="main-title">Together We Can Make Difference</h1>
-            <p className="description">
+            <p className="footer-description">
               Jan Samar Foundation is a non-profitable trust 
               is an organization established to serve charitable, 
               educational, or social purposes without 
