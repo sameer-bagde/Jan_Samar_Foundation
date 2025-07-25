@@ -792,7 +792,7 @@
 
 .Jan-Samar-left img {
     width: 100%;
-    max-width: 700px;
+    min-width: 600px;
     height: auto;
     border-radius: 8px;
 }
@@ -823,7 +823,6 @@
     margin-bottom: 8px;
 }
 
-/* Tablet Responsive */
 @media (max-width: 768px) {
     .paymant-container {
         padding: 20px;
@@ -970,7 +969,7 @@
 
 .Volunteering-section {
     position: relative;
-    background: linear-gradient(to bottom, #483427 30%, #FFFFFF 30%);
+    background: linear-gradient(to bottom, #483427 20%, #FFFFFF 20%);
     padding: 60px 20px 40px 20px; 
     font-family: 'Poppins', sans-serif;
     min-height: 100vh; 
