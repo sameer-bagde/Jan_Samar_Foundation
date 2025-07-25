@@ -241,6 +241,12 @@ footer {
   color: white;
 }
 
+.linkedin, .linkedin:hover {
+  background-color: #0077B5;
+    color: white;
+
+}
+
 .instagram:hover,
 .instagram {
   background: #f09433;
@@ -280,7 +286,7 @@ footer {
 
 .footer-bottom {
     background-color: #d2691e;
-    padding: 20px 75px;
+    padding: 30px 75px;
     color: white;
 }
 
@@ -290,6 +296,7 @@ footer {
     align-items: center;
     max-width: 1600px;
     margin: 0 auto;
+    font-size: 1.2rem;
     flex-wrap: wrap;
 }
 

@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
-.stories-text {
-  font-family: 'Poppins', sans-serif;
-  width: 40%;
-  padding: 20px;
-  font-size: 20px;
-  font-weight: 200; 
-  line-height: 2;
-  color: black;
-}
+
 .welcome-section {
     background: linear-gradient(to bottom, #ffd0b1 50%, #FFFFFF 50%);
     padding: 60px 20px;

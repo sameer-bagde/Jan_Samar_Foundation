@@ -374,40 +374,40 @@ well-being.         </p>
 
 
 
-    <section class="upcoming-events-section">
-        <div class="upcoming-events-container">
-                <div class="upcoming-events-heading">
-                    <h1 class="first">Upcoming Events</h1>
+    <section className="upcoming-events-section">
+        <div className="upcoming-events-container">
+                <div className="upcoming-events-heading">
+                    <h1 className="first">Upcoming Events</h1>
                 </div>
-                <button class="view-all-btn">View All</button>
+                <button className="view-all-btn">View All</button>
             
-            <div class="upcoming-events-grid">
-                <div class="upcoming-events-card">
-                    <div class="upcoming-events-image">
+            <div className="upcoming-events-grid">
+                <div className="upcoming-events-card">
+                    <div className="upcoming-events-image">
                         <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2032&q=80" alt="Education Campaign" loading="lazy" />
-                        <div class="event-overlay">
-                            <h3 class="event-title">Education Campaign</h3>
-                            <button class="join-button">Join With Us</button>
+                        <div className="event-overlay">
+                            <h3 className="event-title">Education Campaign</h3>
+                            <button className="join-button">Join With Us</button>
                         </div>
                     </div>
                 </div>
                 
-                <div class="upcoming-events-card">
-                    <div class="upcoming-events-image">
+                <div className="upcoming-events-card">
+                    <div className="upcoming-events-image">
                         <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Plantation Drive" loading="lazy" />
-                        <div class="event-overlay">
-                            <h3 class="event-title">Plantation Drive</h3>
-                            <button class="join-button">Join With Us</button>
+                        <div className="event-overlay">
+                            <h3 className="event-title">Plantation Drive</h3>
+                            <button className="join-button">Join With Us</button>
                         </div>
                     </div>
                 </div>
                 
-                <div class="upcoming-events-card">
-                    <div class="upcoming-events-image">
+                <div className="upcoming-events-card">
+                    <div className="upcoming-events-image">
                         <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Food Distributions" loading="lazy" />
-                        <div class="event-overlay">
-                            <h3 class="event-title">Food Distributions</h3>
-                            <button class="join-button">Join With Us</button>
+                        <div className="event-overlay">
+                            <h3 className="event-title">Food Distributions</h3>
+                            <button className="join-button">Join With Us</button>
                         </div>
                     </div>
                 </div>
@@ -416,12 +416,12 @@ well-being.         </p>
     </section>
 
 
-    <section class="donate-now-section">
-        <div class="donate-now-container">
-            <header class="donate-now-section-header">
+    <section className="donate-now-section">
+        <div className="donate-now-container">
+            <header className="donate-now-section-header">
                 <h1>Let us unite to elevate our community<br />and the world around us</h1>
                 <p>Sometimes it feels like our efforts are just a small drop in the vast ocean but the ocean would be a little less without that drop. Every contribution matters, no matter how small, and together, we shape the present into a future we can all take pride in.</p>
-                <button class="donate-now-btn">Donate Now</button>
+                <button className="donate-now-btn">Donate Now</button>
             </header>
         </div>
         <div className="donate-grid-container">

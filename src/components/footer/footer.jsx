@@ -1,8 +1,37 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from '../../assets/Jan-Samar-Foundation-2.png';
 import './footer.css';
 
 const Footer = () => {
+  const location = useLocation();
+
+  // Function to handle link clicks and scroll to top
+  const handleLinkClick = (targetPath) => {
+    // Always scroll to top, regardless of whether it's the same path or not
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'instant'
+      });
+      
+      // Fallbacks
+      window.scrollTo(0, 0);
+      if (document.documentElement) {
+        document.documentElement.scrollTop = 0;
+      }
+      if (document.body) {
+        document.body.scrollTop = 0;
+      }
+    };
+
+    // If clicking on the same path, scroll immediately
+    if (location.pathname === targetPath) {
+      scrollToTop();
+    }
+    // For different paths, ScrollToTop component will handle it
+  };
+
   return (
     <footer className="body max-width">
       <div className="foundation-footer">
@@ -46,20 +75,23 @@ const Footer = () => {
                 <img src={Logo} alt="Jan Samar Foundation" className="footer-logo" />
                 <div className="social-container">
                   <p className="follow-text">follow us on</p>
-          <div className="social-bar">
-            <a href="#" className="social-icon facebook">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" className="social-icon twitter">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#" className="social-icon youtube">
-              <i className="fab fa-youtube"></i>
-            </a>
-            <a href="#" className="social-icon instagram">
-              <i className="fab fa-instagram"></i>
-            </a>
-          </div>
+                  <div className="social-bar">
+                    <a href="#" className="social-icon facebook">
+                      <i className="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" className="social-icon x">
+                      <i className="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="#" className="social-icon youtube">
+                      <i className="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" className="social-icon instagram">
+                      <i className="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" className="social-icon linkedin">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -80,10 +112,38 @@ const Footer = () => {
               <div className="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
-                  <li><Link to="/">Home</Link></li>
-                  <li><Link to="/about">About Us</Link></li>
-                  <li><Link to="/programs">Programs</Link></li>
-                  <li><Link to="/get-involved">Get Involved</Link></li>
+                  <li>
+                    <Link 
+                      to="/" 
+                      onClick={() => handleLinkClick("/")}
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link 
+                      to="/about" 
+                      onClick={() => handleLinkClick("/about")}
+                    >
+                      About Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link 
+                      to="/programs" 
+                      onClick={() => handleLinkClick("/programs")}
+                    >
+                      Programs
+                    </Link>
+                  </li>
+                  <li>
+                    <Link 
+                      to="/get-involved" 
+                      onClick={() => handleLinkClick("/get-involved")}
+                    >
+                      Get Involved
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -122,11 +182,20 @@ const Footer = () => {
         <div className="footer-bottom-content">
           <div>Copyrights © 2024 All Rights reserved Jan Samar Foundation</div>
           <div className="footer-links">
-            <Link to="/terms">Terms & Conditions</Link>
+            <Link 
+              to="/terms" 
+              onClick={() => handleLinkClick("/terms")}
+            >
+              Terms & Conditions
+            </Link>
             <span className="divider">|</span>
-            <Link to="/privacy">Privacy Policy</Link>
-            <span className="divider">|</span>
-            <Link to="/refund">Return & Refund Policy</Link>
+            <Link 
+              to="/privacy" 
+              onClick={() => handleLinkClick("/privacy")}
+            >
+              Privacy Policy
+            </Link>
+
           </div>
         </div>
       </div>
