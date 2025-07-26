@@ -16,28 +16,37 @@ const Header = () => {
 
   const isAboutPage = location.pathname === '/about';
   const isGetInvolvedPage = location.pathname === '/get-involved';
-  
-  // Determine which styling to use
+    const isProgramPage = location.pathname === '/programs';
+        const isContactPage = location.pathname === '/contact-us';
+
+
   const getHeaderClass = () => {
     if (isAboutPage) return 'header-no-bg';
     if (isGetInvolvedPage) return 'header-get-involved';
+    if(isProgramPage) return "header-get-involved";
+      if(isContactPage) return "header-get-involved";
+
     return '';
   };
   
   const getLogoSrc = () => {
-    if (isAboutPage || isGetInvolvedPage) return Logo2;
+    if (isAboutPage || isGetInvolvedPage || isContactPage|| isProgramPage) return Logo2;
     return Logo;
   };
   
   const getLogoClass = () => {
     if (isAboutPage) return 'logo-no-bg';
     if (isGetInvolvedPage) return 'logo-get-involved';
+      if(isProgramPage) return "logo-get-involved";
+      if(isContactPage) return "logo-get-involved";
     return 'logo';
   };
   
   const getNavItemClass = () => {
     if (isAboutPage) return 'nav-item-no-bg';
     if (isGetInvolvedPage) return 'nav-item-get-involved';
+    if(isProgramPage) return "nav-item-get-involved";
+    if(isContactPage) return "nav-item-get-involved";
     return 'nav-item';
   };
 
@@ -72,7 +81,7 @@ const Header = () => {
             <Link to="/get-involved" className={getNavItemClass()} onClick={() => setIsMenuOpen(false)}>
               Get Involved
             </Link>
-            <Link to="/contact" className={getNavItemClass()} onClick={() => setIsMenuOpen(false)}>
+            <Link to="/contact-us" className={getNavItemClass()} onClick={() => setIsMenuOpen(false)}>
               Contact Us
             </Link>
             <Link to="/donate" className="donate-button" onClick={() => setIsMenuOpen(false)}>
@@ -81,7 +90,7 @@ const Header = () => {
           </nav>
         </div>
 
-        {!isAboutPage && !isGetInvolvedPage && (
+        {!isAboutPage && !isGetInvolvedPage && !isProgramPage && !isContactPage && (
           <div className="header-content">
             <h1 className="header-title">
               <span className="header-title-small">Small</span>

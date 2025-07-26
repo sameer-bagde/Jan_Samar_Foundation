@@ -62,7 +62,7 @@ const About = () => {
       </div>
 
           <section className="jan-samar-section">
-        <h2 className="section-title">"Jan Samar" - "Movement for People"</h2>
+        <h2 className="jan-samar-section-title">"Jan Samar" - "Movement for People"</h2>
         
         <div className="vision-mission-container">
           <div className="vision-card">

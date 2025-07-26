@@ -101,8 +101,22 @@ const Footer = () => {
               <div className="footer-section">
                 <h3>Events</h3>
                 <ul>
-                  <li><a href="#">Upcoming Events</a></li>
-                  <li><a href="#">Ongoing Events</a></li>
+                  <li>
+                    <Link 
+                      to="/upcoming-events" 
+                      onClick={() => handleLinkClick("/upcoming-events")}
+                    >
+                      Upcoming Events
+                    </Link>
+                  </li>
+                                    <li>
+                    <Link 
+                      to="/upcoming-events" 
+                      onClick={() => handleLinkClick("/ongoing-events")}
+                    >
+                      Ongoing Events
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -142,6 +156,14 @@ const Footer = () => {
                       onClick={() => handleLinkClick("/get-involved")}
                     >
                       Get Involved
+                    </Link>
+                  </li>
+                                    <li>
+                    <Link 
+                      to="/contact-us" 
+                      onClick={() => handleLinkClick("/contact-us")}
+                    >
+                      Contact Us
                     </Link>
                   </li>
                 </ul>
