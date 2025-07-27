@@ -7,6 +7,8 @@ import About from './components/AboutPage/About';
 import GetInvoled from './components/GetInvolvedPage/GetInvoled';
 import Contact from './components/ContactUsPage/contact'
 import ScrollToTop from './components/ScrollToTop'; 
+import Program from './components/Program/program'; 
+
 import './App.css';
 
 function App() {
@@ -23,7 +25,7 @@ function App() {
               <Route path="/get-involved" element={<GetInvoled />} />
               <Route path="/programs" element={<div style={{
                 textAlign: 'center'
-              }}>Programs Page Coming Soon</div>} />
+              }}>{<Program/>}</div>} />
 
               <Route path="/contact-us" element={<Contact />} />
 

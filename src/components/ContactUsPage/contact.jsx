@@ -7,10 +7,10 @@ const Contact = () => {
     return (
         <>
     <section className="contact-section">
-      <div className="left-section">
+      <div className="contact-left-section">
         <img src={Imgcontact} alt="Imgcontact" className="contact-left-image"/>
       </div>
-      <div className="right-section">
+      <div className="contact-right-section">
         <div className="contact-card">
           <h2 className="contact-title">Get In Touch</h2>
           <p className="contact-subtitle">You can reach us anytime</p>
