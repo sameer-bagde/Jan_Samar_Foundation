@@ -348,13 +348,6 @@
           align-items: center;
         }
 
-        .skill-illustration-svg {
-          width: 100%;
-          max-width: 400px;
-          height: auto;
-          object-fit: contain;
-          border-radius: 15px;
-        }
 
         .skill-development-image-section {
           width: 100%;
@@ -391,9 +384,7 @@
             text-align: left;
           }
 
-          .skill-illustration-svg {
-            max-width: 320px;
-          }
+
         }
 
 
@@ -884,18 +875,18 @@
 
 /* Education-Campaign */
 .Education-Campaign-section {
-  max-width: 1600px;
-  margin: 0 auto;
-  overflow: hidden;
+          max-width: 1600px;
+          margin: 0 auto;
+          height: auto;
+          overflow: hidden;
 }
 
 .Education-Campaign-image-section {
-  width: 100%;
-  height: 90%; /* Fill the parent height */
-  display: flex;
-  justify-content: center; /* Corrected from 'contain' */
-  align-items: center;
-  margin-bottom: 0;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 0;
 }
 
 .Education-Campaign-image-section img {
@@ -905,3 +896,91 @@
           object-fit: cover;
           border-radius: 0;
 }
+
+
+
+                .Education-Campaign-container {
+          width: 100%;
+          margin: 0 auto;
+          padding: 80px 40px;
+        }
+
+
+
+
+  /* image container  */
+
+          .collage-container {
+            position: relative;
+            width: 500px;
+            height: 600px;
+        }
+
+        .main-photo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 450px;
+            height: 320px;
+            border-radius: 0 0 200px 0;
+            overflow: hidden;
+                        background-color: rgb(67, 71, 75);
+
+            border: 8px solid white;
+        }
+
+
+        .secondary-photo {
+            position: absolute;
+            bottom: 120px;
+                        background-color:  rgb(67, 71, 75);
+
+            left: 0;
+            width: 300px;
+            height: 220px;
+            border-radius: 0 100px 100px 0;
+            overflow: hidden;
+            border: 6px solid white;
+            z-index: 2;
+        }
+
+
+        .circular-photo {
+            position: absolute;
+            bottom: 80px;
+            background-color:  rgb(67, 71, 75);
+            right: 30px;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 6px solid white;
+            z-index: 3;
+        }
+
+
+
+
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .collage-container {
+                width: 90vw;
+                height: 70vh;
+                transform: scale(0.8);
+            }
+        }
+
+        /* Hover effects */
+        .main-photo:hover,
+        .secondary-photo:hover,
+        .circular-photo:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease;
+        }
+
+        .main-photo,
+        .secondary-photo,
+        .circular-photo {
+            transition: all 0.3s ease;
+        }

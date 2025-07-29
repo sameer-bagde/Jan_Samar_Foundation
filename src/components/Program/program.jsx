@@ -34,7 +34,7 @@ const images = [
       setCurrentIndex((prevIndex) => 
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [images.length]);
@@ -417,7 +417,32 @@ const images = [
             alt="Education Campaign" 
           />
         </div>
+        <div className="Education-Campaign-container">
+<h1 className="section-title" style={{
+              margin: "0"
+            }}>
+        Education Campaign
+      </h1>
+        </div>
+
+            <div className="collage-container">
+        <div className="curved-overlay"></div>
+        
+        <div className="main-photo"></div>
+        
+        <div className="secondary-photo"></div>
+        
+        <div className="circular-photo"></div>
+        
+        <div className="curve-decoration-1"></div>
+        <div className="curve-decoration-2"></div>
+    </div>
+                            
+
         </section>
+
+
+        
     </>
   );
 };

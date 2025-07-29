@@ -75,16 +75,25 @@ const Contact = () => {
     <section className="location-section">
       <div className="location-left-section">
         <div className="map-container">
-          <div className="map-wrapper">
-            <div id="embed-ded-map-canvas" className="map-canvas">
-              <iframe
-                className="map-iframe"
-                frameBorder="0"
-                src="https://www.google.com/maps/embed/v1/place?q=Godrej+Sky+Garden&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-                title="Godrej Sky Garden Location"
-              />
-            </div>
-          </div>
+<div className="map-wrapper">
+  <div id="embed-ded-map-canvas" className="map-canvas">
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15091.296608111865!2d73.11388039235199!3d18.9833719620832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e86fd69b080f%3A0x9f5af10bf64eba5!2sGodrej%20Sky%20Garden%2C%20Panvel%2C%20Navi%20Mumbai%2C%20Maharashtra%20410206!5e0!3m2!1sen!2sin!4v1753774245639!5m2!1sen!2sin"
+  width="600"
+  height="600"
+  style={{
+    border: 'none',
+    boxShadow: 'none',
+    outline: 'none',
+    pointerEvents: 'auto' // keeps map interaction enabled
+  }}
+  allowFullScreen=""
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
+
+  </div>
+</div>
         </div>
       </div>
       
