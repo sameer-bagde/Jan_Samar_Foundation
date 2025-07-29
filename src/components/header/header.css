@@ -35,70 +35,90 @@
   aspect-ratio: unset;
   height: auto;
   min-height: auto;
-  
 }
 
+.header-get-involved {
+  background-image: none !important;
+  background-color: #f5f5f5;
+  aspect-ratio: unset;
+  height: auto;
+  min-height: auto;
+}
+
+/* CONSISTENT NAVBAR STYLING */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.6); 
-  padding: 0 60px;
+  padding: 0 60px; /* Consistent padding for all pages */
   width: 100%;
+  height: 100px; /* Fixed height for consistent alignment */
+  transition: all 0.3s ease;
+}
+
+/* Default navbar (home page) */
+.header .navbar {
+  background-color: rgba(0, 0, 0, 0.6); 
   backdrop-filter: blur(5px); 
   -webkit-backdrop-filter: blur(5px); 
 }
 
-
-/* Update navbar styling for pages without background */
+/* About page navbar */
 .header-no-bg .navbar {
   background-color: #f8d1ba;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 }
 
+/* Get involved, programs, contact pages navbar */
+.header-get-involved .navbar {
+  background-color: white;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+/* CONSISTENT LOGO CONTAINER */
 .logo-container {
   display: flex;
   align-items: center;
+  height: 100%; /* Full height of navbar */
 }
 
-.logo {
+/* CONSISTENT LOGO SIZING - All logos same size */
+.logo,
+.logo-no-bg,
+.logo-get-involved {
   height: 90px;
   width: auto;
+  display: block;
 }
 
-.logo-no-bg{
-  height: 90px;
-    width: auto;
-
-
-}
-
+/* CONSISTENT NAVIGATION LINKS */
 .nav-links {
   display: flex;
   align-items: center;
   gap: 40px;
+  height: 100%; /* Full height of navbar */
   transition: all 0.3s ease;
 }
 
-.nav-item {
-  color: white;
+/* BASE NAV ITEM STYLING - Common properties */
+.nav-item,
+.nav-item-no-bg,
+.nav-item-get-involved {
   text-decoration: none;
   font-family: sans-serif;
   font-size: 20px;
   font-weight: 700;
   display: flex;
   align-items: center;
+  height: 100%; /* Full height for consistent alignment */
+  transition: all 0.3s ease;
 }
 
-.nav-item-no-bg{
-    color: black;
-  text-decoration: none;
-  font-family: sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
+/* Home page nav items */
+.nav-item {
+  color: white;
 }
 
 .nav-item:hover {
@@ -106,12 +126,27 @@
   color: rgb(255, 149, 0);
 }
 
+/* About page nav items */
+.nav-item-no-bg {
+  color: black;
+}
+
 .nav-item-no-bg:hover {
   text-decoration: underline 1px;
   color: rgb(255, 149, 0);
 }
 
-/* Donate button */
+/* Get involved, programs, contact pages nav items */
+.nav-item-get-involved {
+  color: black;
+}
+
+.nav-item-get-involved:hover {
+  text-decoration: underline 1px;
+  color: rgb(255, 149, 0);
+}
+
+/* CONSISTENT DONATE BUTTON */
 .donate-button {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
@@ -122,10 +157,11 @@
   border-radius: 12px;
   padding: 8px 22px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   text-decoration: none;
+  height: fit-content; /* Consistent button height */
 }
 
 .donate-button:hover {
@@ -140,12 +176,20 @@
   cursor: pointer;
   z-index: 100;
   color: orangered;
+  height: 32px; /* Consistent icon size */
+  width: 32px;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 1300px) {
+  .navbar {
+    padding: 0 30px; /* Reduced padding for smaller screens */
+  }
+
   .menu-icon {
-    display: block;
+    display: flex; /* Use flex for better centering */
   }
 
   .nav-links {
@@ -159,7 +203,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.95);
     z-index: 99;
     transition: all 0.3s ease-in-out;
   }
@@ -168,14 +212,32 @@
     display: flex;
     animation: fadeIn 0.3s ease;
   }
+
+  /* Mobile nav items - all white on dark overlay */
+  .nav-links.active .nav-item,
+  .nav-links.active .nav-item-no-bg,
+  .nav-links.active .nav-item-get-involved {
+    color: white;
+    height: auto; /* Auto height in mobile menu */
+  }
 }
 
 @media (max-width: 768px) {
-  .logo {
+  .navbar {
+    padding: 0 20px; /* Further reduced padding */
+    height: 80px; /* Slightly smaller navbar on mobile */
+  }
+
+  .logo,
+  .logo-no-bg,
+  .logo-get-involved {
     height: 70px;
   }
 
-  .donate-button, .nav-item {
+  .donate-button,
+  .nav-item,
+  .nav-item-no-bg,
+  .nav-item-get-involved {
     font-size: 18px;
   }
 }
@@ -189,6 +251,7 @@
   }
 }
 
+/* HEADER CONTENT STYLING */
 .header-content {
   display: flex;
   flex-direction: column;
@@ -201,7 +264,7 @@
 }
 
 .header-title {
-  padding: 1.5rem 0; /* Controls vertical spacing above and below title */
+  padding: 1.5rem 0;
   margin: 0 auto;
   line-height: 1.2;
 }
@@ -245,7 +308,7 @@
   border-radius: 12px;
   padding: 8px 22px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: all 0.3s ease;
   text-decoration: none;
 }
 
@@ -259,50 +322,11 @@
   border-radius: 12px;
   padding: 8px 22px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: all 0.3s ease;
   text-decoration: none;
 }
 
-.header-volunteer-button:hover {
-  transform: scale(1.05);
-}
-
+.header-volunteer-button:hover,
 .header-donate-button:hover {
   transform: scale(1.05);
-}
-
-
-.header-get-involved {
-  background-image: none !important;
-  background-color: #f5f5f5;
-  aspect-ratio: unset;
-  height: auto;
-  min-height: auto;
-}
-
-.header-get-involved .navbar {
-  background-color: white;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-}
-
-.nav-item-get-involved {
-  color: black;
-  text-decoration: none;
-  font-family: sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-}
-
-.logo-get-involved {
-  height: 90px;
-  width: auto;
-
-}
-
-.nav-item-get-involved:hover {
-  text-decoration: underline 1px;
-  color: rgb(255, 149, 0);
 }

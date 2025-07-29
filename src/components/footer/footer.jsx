@@ -50,14 +50,20 @@ const Footer = () => {
             <h2 className="subscribe-title">Subscribe Us</h2>
             <form className="subscribe-form">
               <div className="input-container">
+                <div className="footer-email-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#666" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <polyline points="22,6 12,13 2,6" stroke="#666" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
                 <input 
                   type="email" 
                   placeholder="Enter your E-Mail Address"
-                  className="email-input"
+                  className="footer-email-input"
                   required
                 />
                 <button type="submit" className="submit-btn">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </button>
@@ -109,9 +115,9 @@ const Footer = () => {
                       Upcoming Events
                     </Link>
                   </li>
-                                    <li>
+                  <li>
                     <Link 
-                      to="/upcoming-events" 
+                      to="/ongoing-events" 
                       onClick={() => handleLinkClick("/ongoing-events")}
                     >
                       Ongoing Events
@@ -158,7 +164,7 @@ const Footer = () => {
                       Get Involved
                     </Link>
                   </li>
-                                    <li>
+                  <li>
                     <Link 
                       to="/contact-us" 
                       onClick={() => handleLinkClick("/contact-us")}
@@ -217,7 +223,6 @@ const Footer = () => {
             >
               Privacy Policy
             </Link>
-
           </div>
         </div>
       </div>

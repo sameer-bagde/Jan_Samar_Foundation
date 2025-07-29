@@ -1,23 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Lobster&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 .event-section {
   max-width: 1600px;
   margin: 0 auto;
   background-color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: flex;
   align-items: center;
   padding: 60px 40px;
-  gap: 40px; /* Added consistent gap */
+  gap: 40px; 
 }
 
-/* Normal layout: Image left, content right */
 .event-section.normal {
   flex-direction: row;
 }
 
-/* Reverse layout: Content left, image right */
 .event-section.reverse {
   flex-direction: row-reverse;
 }
@@ -51,6 +49,7 @@
   justify-content: center;
   align-items: center;
   padding: 0;
+  
 }
 
 .event-card {
@@ -64,7 +63,7 @@
 }
 
 .event-title {
-  font-size: clamp(1.5rem, 4vw, 2.2rem); 
+  font-size: 2.5rem; 
   font-weight: 500;
   color: #000000;
   margin-bottom: 20px;
@@ -91,7 +90,7 @@
 }
 
 .event-description {
-  font-size: clamp(0.9rem, 2vw, 1rem); /* Fluid typography */
+  font-size: 1.1rem; /* Fluid typography */
   color: #000000;
   line-height: 1.6;
   margin-bottom: 30px;
@@ -106,7 +105,7 @@
 .event-detail-item {
   display: flex;
   margin-bottom: 12px;
-  font-size: clamp(0.9rem, 2vw, 1rem); /* Fluid typography */
+  font-size: 1rem; /* Fluid typography */
   flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
@@ -312,7 +311,7 @@
           margin: 0 auto;
           height: auto;
           overflow: hidden;
-          font-family: 'Poppins', sans-serif;
+  font-family: "Montserrat", sans-serif;
         }
 
         .skill-development-container {
@@ -333,7 +332,7 @@
         }
 
         .skill-development-text p {
-          font-size: 1.1rem;
+          font-size: 1.2rem;
           line-height: 1.8;
           color: #000000;
           margin-bottom: 30px;
@@ -402,7 +401,7 @@
           max-width: 1600px;
           margin: 0 auto;
           background-color: white;
-          font-family: 'Poppins', sans-serif;
+  font-family: "Montserrat", sans-serif;
           padding: 20px 20px 60px 20px ;
         }
 
@@ -417,7 +416,7 @@
   display: inline-block;
         }
 
-        .section-title::after {
+        .section-title:after {
   content: '';
   position: absolute;
   bottom: -5px;
@@ -427,11 +426,13 @@
   height: 3px;
   background-color: #ff7b29;
   transition: width 0.3s ease;
-        }
+}
 
-        .section-title:hover::after {
-          width: 30%;
-        }
+.section-title:hover:after {
+  width: 30%;
+}
+
+
 
         .courses-grid {
           display: grid;
@@ -450,6 +451,8 @@
           transition: all 0.3s ease;
           position: relative;
           overflow: hidden;
+            font-family: "Montserrat", sans-serif;
+
         }
 
         .course-card::before {
@@ -571,11 +574,12 @@
         }
 
 
-                /* Program Intent Section */
+/* Program Intent Section */
 .program-intent-section {
   max-width: 1600px;
   margin: 40px auto 0;
   padding: 0 40px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .program-intent-card {
@@ -586,93 +590,77 @@
   margin: 0 auto 70px auto; /* Centers the card horizontally */
   box-shadow: 10px 10px 10px 5px rgba(255, 115, 0, 0.2);
 }
-        .program-intent-title {
-          font-size: clamp(1.8rem, 4vw, 2.5rem);
-          font-weight: 700;
-          color: #e67e22;
-          margin-bottom: 10px;
-          text-align: left;
-        }
 
-        .intent-list {
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-        }
+.program-intent-title {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: #e67e22;
+  margin-bottom: 10px;
+  text-align: left;
+}
 
-        .intent-item {
-          display: flex;
-          align-items: flex-start;
-          gap: 15px;
-          padding: 10px 0;
-        }
+.intent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-        .intent-icon {
-          color: #e67e22;
-          border-radius: 50%;
-          padding: 4px;
-          flex-shrink: 0;
-        }
+.intent-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 10px 0;
+}
 
-        .intent-text {
-          font-size: 1.3rem;
-          color: black;
-          line-height: 1.6;
-          font-weight: 400;
-          letter-spacing: 1.6;
-        }
+.intent-icon {
+  color: #e67e22;
+  border-radius: 50%;
+  padding: 4px;
+  flex-shrink: 0;
+}
 
-        .program-images-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-          gap: 20px;
-          max-width: 1300px;
-          margin: 0 auto;
-        }
+.intent-text {
+  font-size: 1.3rem;
+  color: black;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 1.6;
+}
 
-        .program-image {
-          width: 100%;
-          height: 400px;
-          object-fit: cover;
-          border-radius: 15px;
+.program-images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
 
-        }
+.program-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
 
+.contact-text {
+  font-size: 1.2rem;
+  color: #000000;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding-left: 25px;
+}
 
-        .contact-text {
-          font-size: 1.2rem;
-          color: #000000;
-          font-weight: 500;
-          margin-bottom: 10px;
-          padding-left: 25px;
-        }
+.contact-link {
+  color: #e67e22;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
 
-        .contact-link {
-          color: #e67e22;
-          text-decoration: none;
-          font-weight: 600;
-          transition: color 0.3s ease;
-        }
-
-        .contact-link:hover {
-          color: #ff7b29;
-          text-decoration: underline;
-        }
-        @media (max-width: 480px) {
-          .course-offered-section {
-            padding: 40px 15px;
-          }
-
-          .course-card {
-            padding: 25px 15px;
-          }
-
-          .course-icon {
-            width: 60px;
-            height: 60px;
-          }
-        }
-
+.contact-link:hover {
+  color: #ff7b29;
+  text-decoration: underline;
+}
 
 /* ongoing */
 .ongoing-section {
@@ -681,8 +669,12 @@
   background-color: white;
   padding: 20px 20px 60px 20px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
+  margin-bottom: 50px;
+  font-family: "Montserrat", sans-serif;
+  min-height: 500px;
+  overflow: hidden;
 }
 
 .ongoing-section.normal {
@@ -690,33 +682,36 @@
 }
 
 .ongoing-program-container {
-  flex: 2; 
-  max-width: 800px; 
+  flex: 1; 
+  max-width: 60%; 
   margin: 0; 
   color: #000;
+  z-index: 10;
+  position: relative;
 }
 
 .ongoing-banner {
   background-color: #ffddc8;
   padding: 10px;
   clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
-  width: 800px;
-
+  width: 100%;
+  max-width: 800px;
 }
 
 .ongoing-banner h2 {
   margin: 0;
   font-size: 2rem;
-   font-weight: 400;
+  font-weight: 400;
   text-align: center;
   line-height: 1.4;
 }
 
 .ongoing-description {
-  font-size: 1.4rem;
-  line-height: 1.2;
+  font-size: 1.2rem;
+  line-height: 1.4;
   margin-top: 30px;
   text-align: justify;
+  font-family: "Montserrat", sans-serif;
 }
 
 .ongoing-read-more {
@@ -726,6 +721,7 @@
   font-size: 1.2rem;
   font-weight: 500;
   float: right;
+  clear: both;
 }
 
 .ongoing-read-more:hover {
@@ -736,17 +732,17 @@
   flex: 1; 
   position: relative;
   width: 100%;
-  max-width: 900px;
+  max-width: 40%;
   height: 400px;
-  margin: 0 auto;
+  margin: 0;
   perspective: 1000px;
+  flex-shrink: 0;
 }
 
 .carousel-layer {
   position: absolute;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   transition: all 0.7s ease-in-out;
 }
 
@@ -810,188 +806,502 @@
   z-index: 20;
   opacity: 1;
   filter: none;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-/* Responsive design */
+/* Education-Campaign */
+/* Education-Campaign */
+.Education-Campaign-section {
+    max-width: 1600px;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+
+.Education-Campaign-image-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.Education-Campaign-image-section img {
+    width: 100%;
+    height: auto;
+    max-width: 1600px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.Education-Campaign-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 40px;
+}
+
+.Education-Campaign-container p {
+    text-align: justify;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    font-weight: 400;
+    color: black;
+    padding: 10px;
+}
+
+.college-image-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row; /* Default: image left, content right */
+    align-items: flex-start; /* Changed from flex-end to flex-start to shift downward */
+    gap: 25px;
+}
+
+/* Add this class to reverse the layout (content left, image right) */
+.college-image-container.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Content wrapper - this div will flex, but paragraphs inside will remain block */
+.college-content {
+    flex: 1;
+    display: block; /* Ensures paragraphs stack normally */
+    margin: 0; /* Fixed: Ensure no margin */
+    padding: 10px 0;
+}
+
+/* Paragraphs inside remain in normal document flow (block elements) */
+.college-content p {
+    display: block; /* Explicitly block to prevent any flex interference */
+    line-height: 1.6;
+    text-align: justify;
+    width: 100%;
+}
+
+/* Optional: Add alternating background colors for visual separation */
+.college-image-container:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 40px 20px;
+    border-radius: 12px;
+}
+
+.main-content {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Updated collage container - no more float */
+.collage-container {
+    margin: 20px 0;
+    position: relative;
+    width: 600px;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+.college-image-container::after {
+    display: none;
+}
+
+.main-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 575px;
+    border-radius: 280px 0 280px 0;
+    overflow: hidden;
+    background-color: rgb(67, 71, 75);
+    border: 8px solid white;
+    display: flex;
+}
+
+/* Fix for main photo image */
+.main-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.secondary-photo {
+    position: absolute;
+    bottom: 30px;
+    background-color: rgb(67, 71, 75);
+    left: 0;
+    width: 60%;
+    height: 320px;
+    border-radius: 0 160px 0 160px;
+    overflow: hidden;
+    border: 6px solid white;
+    z-index: 3;
+}
+
+/* Fix for secondary photo image */
+.secondary-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.circular-photo {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    background-color: rgb(67, 71, 75);
+    width: 50%;
+    height: 275px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid white;
+    z-index: 2;
+}
+
+/* Fix for circular photo image */
+.circular-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.main-photo:hover, .secondary-photo:hover, .circular-photo:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+.main-photo, .secondary-photo, .circular-photo {
+    transition: all 0.3s ease;
+}
+/* Responsive Media Queries - Preserving Original Design */
+@media (max-width: 1400px) {
+    .program-intent-section,
+    .Education-Campaign-container,
+    .college-image-container {
+        transform: scale(calc(100vw / 1400));
+        transform-origin: top center;
+    }
+}
+
 @media (max-width: 1200px) {
-  .ongoing-section {
-    flex-direction: column;
+    .ongoing-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+        min-height: auto;
+    }
+
+    .ongoing-program-container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .carousel-container {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Stack vertically on mobile */
+    .college-image-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .college-image-container.reverse {
+        flex-direction: column; /* Same as normal on mobile */
+    }
+
+    /* Make college container responsive at 1200px */
+    .collage-container {
+        width: 100%;
+        max-width: 500px;
+        height: 0;
+        padding-bottom: 125%; /* Maintain aspect ratio */
+        box-sizing: border-box;
+    }
+
+    .main-photo {
+        width: 90%;
+        height: 76.67%;
+        box-sizing: border-box;
+        border-width: 6px;
+    }
+
+    .secondary-photo {
+        width: 53.33%;
+        height: 42.67%;
+        bottom: 4%;
+        border-width: 6px;
+        border-radius: 0 50% 0 50%;
+        box-sizing: border-box;
+    }
+
+    .circular-photo {
+        width: 41.67%;
+        height: 33.33%;
+        border-width: 6px;
+        box-sizing: border-box;
+    }
+}
+@media (max-width: 1000px) {
+  .program-intent-section {
+    transform: scale(calc(100vw / 1000));
+    padding: 0 20px;
   }
   
-  .ongoing-program-container {
-    max-width: 800px;
-    margin: 40px auto;
+  .Education-Campaign-section {
+    transform: scale(calc(100vw / 1000));
+  }
+  
+  .ongoing-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 15px;
+  }
+  
+  .ongoing-program-container,
+  .carousel-container {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .college-image-container {
+    padding: 0 15px;
+  }
+  
+  .collage-container {
+    float: none;
+    margin: 0 auto 30px auto;
+    display: block;
+    max-width: 450px;
+    padding-bottom: 125%;
+  }
+  
+  .main-photo {
+    border-radius: 200px 0 200px 0;
+  }
+  
+  .secondary-photo {
+    border-radius: 0 35% 0 35%;
   }
 }
 
 @media (max-width: 768px) {
+  .program-intent-section {
+    transform: scale(calc(100vw / 768));
+    padding: 0 15px;
+  }
+  
+  .ongoing-section {
+    flex-direction: column;
+    padding: 15px 10px;
+    gap: 20px;
+  }
+  
   .carousel-container {
     height: 300px;
-    max-width: 600px;
   }
-
-  .layer-main {
-    width: 300px;
-    height: 200px;
+  
+  .Education-Campaign-section {
+    transform: scale(calc(100vw / 768));
   }
-
-  .layer-prev,
-  .layer-next {
-    width: 200px;
-    height: 140px;
+  
+  .Education-Campaign-container {
+    padding: 60px 30px;
   }
-
-  .layer-bg-left,
-  .layer-bg-right {
-    width: 150px;
-    height: 100px;
+  
+  .college-image-container {
+    padding: 0 10px;
   }
-
-  .layer-prev {
-    left: 5%;
+  
+  .collage-container {
+    max-width: 350px;
+    padding-bottom: 125%;
+    margin: 0 auto 25px auto;
   }
+  
+  .main-photo {
+    border-radius: 150px 0 150px 0;
+    border-width: 4px;
+  }
+  
+  .secondary-photo,
+  .circular-photo {
+    border-width: 4px;
+  }
+  
+  .secondary-photo {
+    border-radius: 0 30% 0 30%;
+  }
+}
 
-  .layer-next {
-    right: 5%;
+@media (max-width: 600px) {
+  .program-intent-section {
+    transform: scale(calc(100vw / 600));
+    margin: 30px auto 0;
+  }
+  
+  .ongoing-section {
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+  }
+  
+  .carousel-container {
+    height: 250px;
+  }
+  
+  .Education-Campaign-section {
+    transform: scale(calc(100vw / 600));
+  }
+  
+  .college-image-container {
+    padding: 0 8px;
+  }
+  
+  .collage-container {
+    max-width: 300px;
+    padding-bottom: 125%;
+    margin: 0 auto 20px auto;
+  }
+  
+  .main-photo {
+    border-radius: 120px 0 120px 0;
+    border-width: 3px;
+  }
+  
+  .secondary-photo,
+  .circular-photo {
+    border-width: 3px;
+  }
+  
+  .secondary-photo {
+    border-radius: 0 25% 0 25%;
   }
 }
 
 @media (max-width: 480px) {
+  .program-intent-section,
+  .Education-Campaign-section {
+    transform: scale(calc(100vw / 480));
+  }
+  
+  .ongoing-section {
+    flex-direction: column;
+    padding: 10px 5px;
+    gap: 15px;
+  }
+  
   .carousel-container {
-    height: 250px;
+    height: 220px;
+  }
+  
+  .course-offered-section {
+    padding: 40px 15px;
   }
 
-  .layer-main {
-    width: 250px;
-    height: 170px;
+  .course-card {
+    padding: 25px 15px;
   }
 
-  .layer-prev,
-  .layer-next {
-    width: 160px;
-    height: 110px;
+  .course-icon {
+    width: 60px;
+    height: 60px;
   }
-
-  .layer-bg-left,
-  .layer-bg-right {
-    display: none;
+  
+  .college-image-container {
+    padding: 0 5px;
+  }
+  
+  .collage-container {
+    max-width: 250px;
+    padding-bottom: 125%;
+    margin: 0 auto 15px auto;
+  }
+  
+  .main-photo {
+    border-radius: 100px 0 100px 0;
+    border-width: 2px;
+  }
+  
+  .secondary-photo,
+  .circular-photo {
+    border-width: 2px;
+  }
+  
+  .secondary-photo {
+    border-radius: 0 20% 0 20%;
   }
 }
 
-
-
-/* Education-Campaign */
-.Education-Campaign-section {
-          max-width: 1600px;
-          margin: 0 auto;
-          height: auto;
-          overflow: hidden;
+@media (max-width: 400px) {
+  .program-intent-section,
+  .Education-Campaign-section {
+    transform: scale(calc(100vw / 400));
+  }
+  
+  .ongoing-section {
+    flex-direction: column;
+    padding: 8px;
+    gap: 12px;
+  }
+  
+  .carousel-container {
+    height: 200px;
+  }
+  
+  .collage-container {
+    max-width: 220px;
+    padding-bottom: 125%;
+  }
+  
+  .main-photo {
+    border-radius: 80px 0 80px 0;
+  }
+  
+  .secondary-photo {
+    border-radius: 0 18% 0 18%;
+  }
 }
 
-.Education-Campaign-image-section {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-bottom: 0;
+@media (max-width: 320px) {
+  .program-intent-section,
+  .Education-Campaign-section {
+    transform: scale(calc(100vw / 320));
+  }
+  
+  .ongoing-section {
+    flex-direction: column;
+    padding: 5px;
+    gap: 10px;
+  }
+  
+  .carousel-container {
+    height: 180px;
+  }
+  
+  .collage-container {
+    max-width: 180px;
+    padding-bottom: 125%;
+  }
+  
+  .main-photo {
+    border-radius: 60px 0 60px 0;
+    border-width: 2px;
+  }
+  
+  .secondary-photo {
+    border-radius: 0 15% 0 15%;
+  }
 }
-
-.Education-Campaign-image-section img {
-          width: 100%;
-          height: auto;
-          max-width: 1600px;
-          object-fit: cover;
-          border-radius: 0;
-}
-
-
-
-                .Education-Campaign-container {
-          width: 100%;
-          margin: 0 auto;
-          padding: 80px 40px;
-        }
-
-
-
-
-  /* image container  */
-
-          .collage-container {
-            position: relative;
-            width: 500px;
-            height: 600px;
-            margin-left: 50%;
-                        margin-right: 50%;
-
-        }
-
-        .main-photo {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 450px;
-            height: 320px;
-            border-radius: 0 0 200px 0;
-            overflow: hidden;
-                        background-color: rgb(67, 71, 75);
-
-            border: 8px solid white;
-        }
-
-
-        .secondary-photo {
-            position: absolute;
-            bottom: 120px;
-                        background-color:  rgb(67, 71, 75);
-
-            left: 0;
-            width: 300px;
-            height: 220px;
-            border-radius: 0 100px 100px 0;
-            overflow: hidden;
-            border: 6px solid white;
-            z-index: 2;
-        }
-
-
-        .circular-photo {
-            position: absolute;
-            bottom: 80px;
-            background-color:  rgb(67, 71, 75);
-            right: 30px;
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 6px solid white;
-            z-index: 3;
-        }
-
-
-
-
-
-        /* Responsive design */
-        @media (max-width: 768px) {
-            .collage-container {
-                width: 90vw;
-                height: 70vh;
-                transform: scale(0.8);
-            }
-        }
-
-        /* Hover effects */
-        .main-photo:hover,
-        .secondary-photo:hover,
-        .circular-photo:hover {
-            transform: scale(1.02);
-            transition: transform 0.3s ease;
-        }
-
-        .main-photo,
-        .secondary-photo,
-        .circular-photo {
-            transition: all 0.3s ease;
-        }
