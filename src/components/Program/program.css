@@ -335,7 +335,7 @@
         .skill-development-text p {
           font-size: 1.1rem;
           line-height: 1.8;
-          color: #2c3e50;
+          color: #000000;
           margin-bottom: 30px;
           text-align: justify;
           font-weight: 400;
@@ -346,6 +346,14 @@
           display: flex;
           justify-content: center;
           align-items: center;
+        }
+
+                .skill-illustration-svg {
+          width: 100%;
+          max-width: 400px;
+          height: auto;
+          object-fit: contain;
+          border-radius: 15px;
         }
 
 
@@ -914,6 +922,9 @@
             position: relative;
             width: 500px;
             height: 600px;
+            margin-left: 50%;
+                        margin-right: 50%;
+
         }
 
         .main-photo {
