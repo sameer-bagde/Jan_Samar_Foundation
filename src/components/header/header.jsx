@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import Logo from '../../assets/Jan-Samar-Foundation.png';
 import Logo2 from '../../assets/Jan-Samar-Foundation-2.png';
 
-import './Header.css';
+import './header.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
