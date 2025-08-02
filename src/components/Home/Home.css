@@ -823,7 +823,7 @@
     transform: scale(1.05);
 }
 
-.event-overlay {
+.upcoming-event-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -833,7 +833,7 @@
     padding: 30px 25px 25px;
 }
 
-.event-title {
+.upcoming-event-title {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 15px;

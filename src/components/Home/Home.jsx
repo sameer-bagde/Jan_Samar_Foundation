@@ -3,7 +3,7 @@ import { FaSeedling, FaGraduationCap, FaNotesMedical } from 'react-icons/fa';
 import { Mail } from 'lucide-react';
 import './Home.css';
 import img1 from '../../assets/img1.jpg';
-import img2 from '../../assets/img2.jpg';
+import img2 from '../../assets/img2.jpg'; 
 import img3 from '../../assets/img3.jpg';
 import img4 from '../../assets/image3.jpg';
 import img5 from '../../assets/muskan.jpg'
@@ -385,8 +385,8 @@ well-being.         </p>
                 <div className="upcoming-events-card">
                     <div className="upcoming-events-image">
                         <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2032&q=80" alt="Education Campaign" loading="lazy" />
-                        <div className="event-overlay">
-                            <h3 className="event-title">Education Campaign</h3>
+                        <div className="upcoming-event-overlay">
+                            <h3 className="upcoming-event-title">Education Campaign</h3>
                             <button className="join-button">Join With Us</button>
                         </div>
                     </div>
@@ -395,8 +395,8 @@ well-being.         </p>
                 <div className="upcoming-events-card">
                     <div className="upcoming-events-image">
                         <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Plantation Drive" loading="lazy" />
-                        <div className="event-overlay">
-                            <h3 className="event-title">Plantation Drive</h3>
+                        <div className="upcoming-event-overlay">
+                            <h3 className="upcoming-event-title">Plantation Drive</h3>
                             <button className="join-button">Join With Us</button>
                         </div>
                     </div>
@@ -405,8 +405,8 @@ well-being.         </p>
                 <div className="upcoming-events-card">
                     <div className="upcoming-events-image">
                         <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Food Distributions" loading="lazy" />
-                        <div className="event-overlay">
-                            <h3 className="event-title">Food Distributions</h3>
+                        <div className="upcoming-event-overlay">
+                            <h3 className="upcoming-event-title">Food Distributions</h3>
                             <button className="join-button">Join With Us</button>
                         </div>
                     </div>
